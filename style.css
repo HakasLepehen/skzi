@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.generate {
+    -webkit-writing-mode: horizontal-tb !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 15px;
+    background: #4676d7;
+    padding: 8px 16px;
+    text-rendering: auto;
+    color: #fff;
+    display: inline-block;
+    text-align: start;
+    margin: 10px 0 0 0;
+    font: 400 16px inherit;
+    min-width: 100px;
+}
+
+.generate:hover {
+    cursor: pointer;
+    background: aquamarine;
+}
+
+.generate:focus {
+    outline: none;
+    background: aqua;
+    box-shadow: 0 0 0 1px aqua;
+}
+
+.c-button svg {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.25rem;
+}
