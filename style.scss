@@ -4,10 +4,12 @@
   color: #b8c1ec;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  line-height: 20px; }
+  line-height: 20px;
+}
 
 input {
-  background-color: #fffffe; }
+  background-color: #fffffe;
+}
 
 .generate {
   -webkit-writing-mode: horizontal-tb !important;
@@ -24,14 +26,17 @@ input {
   text-align: start;
   margin: 10px 0 0 0;
   font: 400 16px inherit;
-  min-width: 100px; }
-  .generate:hover {
+  min-width: 100px;
+
+  &:hover {
     background-color: #e9a4b1;
     border: #E79DAB;
-    cursor: pointer; }
-  .generate:focus {
+    cursor: pointer;
+  }
+
+  &:focus {
     outline: none;
     background: aqua;
-    box-shadow: 0 0 0 1px aqua; }
-
-/*# sourceMappingURL=style.css.map */
+    box-shadow: 0 0 0 1px aqua;
+  }
+}

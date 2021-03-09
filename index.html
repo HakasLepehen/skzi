@@ -8,27 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="data-block">
-        <label>Тип операции:</label>
-        <input type="checkbox" name="operation"><label>Выдать</label>
-        <input type="checkbox" name="operation"><label>Заменить</label>
-        <input type="checkbox" name="operation"><label>Обновить</label>
+<div>
+    <span>Тип операции:</span>
+    <input type="radio" name="operation" id="operationChoiceGive" checked>
+    <label for="operationChoiceGive">Выдать</label>
+    <input type="radio" name="operation" id="operationChoiceReplace">
+    <label for="operationChoiceReplace">Заменить</label>
+    <input type="radio" name="operation" id="operationChoiceUpdate">
+    <label for="operationChoiceUpdate">Обновить</label>
+</div>
+<div>
+    <label>Номер ранее выданной карты водителя RUD</label>
+    <input type="text" name="name">
+</div>
+<div>
+    <label>Ф.И.О.</label>
+    <input type="text" name="name">
+</div>
+<div>
+    <label>Гражданство:</label>
+    <input type="radio" name="citizenship"><label>РФ</label>
+    <input type="radio" name="citizenship"><label>Другое</label>
+    <input type="text" name="citizenship" disabled>
+</div>
+<button class="generate">Сгенерировать документ</button>
+
+<form>
+    <p>Please select your preferred contact method:</p>
+    <div>
+        <input type="radio" id="contactChoice1"
+               name="contact" value="email" checked>
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2"
+               name="contact" value="phone">
+        <label for="contactChoice2">Phone</label>
+
+        <input type="radio" id="contactChoice3"
+               name="contact" value="mail">
+        <label for="contactChoice3">Mail</label>
     </div>
-    <div class="data-block">
-        <label>Номер ранее выданной карты водителя RUD</label>
-        <input type="text" name="name">
+    <div>
+        <button type="submit">Submit</button>
     </div>
-    <div class="data-block">
-        <label>Ф.И.О.</label>
-        <input type="text" name="name">
-    </div>
-    <div class="data-block">
-        <label>Гражданство:</label>
-        <input type="checkbox" name="citizenship"><label>РФ</label>
-        <input type="checkbox" name="citizenship"><label>Другое</label>
-        <input type="text" name="citizenship" disabled>
-    </div>
-    <button class="generate">Сгенерировать документ</button>
+</form>
 <script src="main.js"></script>
 </body>
 </html>
